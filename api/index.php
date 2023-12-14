@@ -33,6 +33,7 @@
         $cadenaSQL = "select * from s_customer";
         $resultado = mysqli_query($conexion, $cadenaSQL);
 
+        
         while ($fila = mysqli_fetch_object($resultado)) {
          echo "<tr><td> " .$fila->name . 
          "</td><td>" . $fila->credit_rating .
